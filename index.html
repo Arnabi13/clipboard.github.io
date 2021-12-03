@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Copy a text to clipboard</title>
+	<script type = "text/javascript">
+	function Copy() 
+	{
+		var copyText = document.getElementById('myInput')
+		copyText.select();
+		document.execCommand('copy')
+		console.log('Copied Text')
+	}
+	</script>
+</head>
+<body style="background-color:rgb(180,232,232);">
+    <center>
+    <br><br><br><br>
+    <h1>COPY A GIVEN STRING TO CLIPBOARD</h1>
+    <hr width="60%">
+	<input type="text" value="INTERNET TECHNOLOGIES"id="myInput" size="40"/>
+	<button onclick="Copy()">Copy Text</button>
+    </center>
+</body>
+</html>
